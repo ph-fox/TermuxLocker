@@ -69,7 +69,7 @@ while True:
 		ui = input(g+"AL104~: ")
 
 		if(ui == paz):
-			print(f"{g}Nice!\n Welcome Back!!")
+			print(g+"Nice!\n Welcome Back!!")
 			time.sleep(2)
 			os.system("clear")
 			break
@@ -103,9 +103,9 @@ while True:
 		payload = pload.replace('ptestp', ui2)
 		o.write(payload)
 		print("Installing..pls wait")
-
 		os.system('echo python3 lock.py >> /data/data/com.termux/files/usr/etc/bash.bashrc')
 		os.system('cp lock.py /data/data/com.termux/files/usr/etc/')
+		time.sleep(2)
 		os.system('cp lock.py /data/data/com.termux/files/home/')
 		print("installation done! pls restart termux!")
 		print('Important Note! Do not delete the file name lock.py')
