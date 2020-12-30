@@ -104,14 +104,15 @@ while True:
 		o.write(payload)
 		print("Installing..pls wait")
 		os.system('echo python3 lock.py >> /data/data/com.termux/files/usr/etc/bash.bashrc')
-		time.sleep(5)
-		os.system('cp lock.py /data/data/com.termux/files/usr/etc/')
-		os.system('cp lock.py /data/data/com.termux/files/home/')
-		time.sleep(3)
-		os.system('cp lock.py /data/data/com.termux/files/usr/etc/')
-		os.system('cp lock.py /data/data/com.termux/files/home/')
-		print("installation done! pls restart termux!")
-		print('Important Note! Do not delete the file name lock.py')
+		time.sleep(.1)
+		os.system('mv lock.py /data/data/com.termux/files/usr/etc/')
+		time.sleep(.1)
+		o.write(payload)
+		os.system('mv lock.py /data/data/com.termux/files/home/')
+		
+		print("\n installation done! pls restart termux!")
+		print('Important Note! Do not delete the file name lock.py \n')
+		print("pls restart TERMUX")
 
 		break
 
