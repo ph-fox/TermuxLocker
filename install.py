@@ -4,7 +4,7 @@ os.system('pkg install pip')
 
 try:
 	import colorama
-	from colorama import Fore
+	from colorama import Fore,Back
 
 except ImportError:
 	os.system("pip install colorama")
@@ -18,7 +18,7 @@ m = f.MAGENTA
 c = f.CYAN
 y = f.YELLOW
 
-print(y+"""
+print(Back.BLUE+r+"""
 ╔╦╗┌─┐┬─┐┌┬┐┬ ┬─┐ ┬  ╦  ┌─┐┌─┐┬┌─┌─┐┬─┐
  ║ ├┤ ├┬┘││││ │┌┴┬┘  ║  │ ││  ├┴┐├┤ ├┬┘
  ╩ └─┘┴└─┴ ┴└─┘┴ └─  ╩═╝└─┘└─┘┴ ┴└─┘┴└─
