@@ -18,7 +18,7 @@ m = f.MAGENTA
 c = f.CYAN
 y = f.YELLOW
 
-print(r+"""
+print(y+"""
 ╔╦╗┌─┐┬─┐┌┬┐┬ ┬─┐ ┬  ╦  ┌─┐┌─┐┬┌─┌─┐┬─┐
  ║ ├┤ ├┬┘││││ │┌┴┬┘  ║  │ ││  ├┴┐├┤ ├┬┘
  ╩ └─┘┴└─┴ ┴└─┘┴ └─  ╩═╝└─┘└─┘┴ ┴└─┘┴└─
@@ -69,7 +69,7 @@ while True:
 		ui = input(g+"AL104~: ")
 
 		if(ui == paz):
-			print(g+"Nice!\n Welcome Back!!")
+			print(g+"Nice! Welcome Back!!")
 			time.sleep(2)
 			os.system("clear")
 			break
